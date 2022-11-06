@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+  <main class="main-container">
+    <!-- header -->
+    <header>
+      <div class="menu">
+        <img src="./images/icon-menu.svg" alt="hamburger menu" class="menu">
+      </div>
+      <div class="company-logo">
+        <img src="./images/logo.svg" alt="Company logo" class="logo">
+      </div>
+      <nav class="nav-list">
+        <div class="close">
+          <img src="./images/icon-close.svg" alt="x close button" class="closeBtn">
+        </div>
+        <ul class="list">
+          <li class="nav-links">Collections</li>
+          <li class="nav-links">Men</li>
+          <li class="nav-links">Women</li>
+          <li class="nav-links">About</li>
+          <li class="nav-links">Contact</li>
+        </ul>
+      </nav>
+      <div class="avatar-and-cart">
+        <img src="./images/icon-cart.svg" alt="shopping-cart" class="cart">
+        <img src="./images/image-avatar.png" alt="picture of a man" class="avatar-img">
+        <small class="cart-notify"></small>
+        <div class="checkout-section">
+          <h3 class="checkout-header">Cart</h3>
+          <p class="checkout-placeholder">Your card is empty</p>
+          <div class="checkout-card">
+            <div class="checkout-details">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="shoe img" class="checkout-img">
+              <div class="shoe-details">
+                <p class="shoe-name">Fall Limited Edition Sneakers</p>
+                <p class="shoe-price">$125.00 × <span class="items"></span><span class="final-price"></span></p>
+              </div>
+              <div class="trash-icon">
+                <img src="./images/icon-delete.svg" alt="dustbin icon" class="trash">
+              </div>
+            </div>
+            <button class="checkout-btn" aria-label="submit">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header ends -->
+
+    <div class="product-container">
+
+      <!-- slider container -->
+
+
+      <div class="images-section">
+        <div class="product-imgs">
+          <div class="img-showcase">
+            <img src="./images/image-product-1.jpg" alt="show-img" class="productImg  img-product-1" id="productImage"
+              data-id="1">
+            <img src="./images/image-product-2.jpg" alt="show-img" class="productImg product-2" data-id="2">
+            <img src="./images/image-product-3.jpg" alt="show-img" class="productImg product-3" data-id="3">
+            <img src="./images/image-product-4.jpg" alt="show-img" class="productImg product-4" data-id="4">
+          </div>
+        </div>
+        <div class="arrow-imgs">
+          <button class="prevBtn">prev</button>
+          <button class="nextBtn">next</button>
+        </div>
+        <div class="thumbnails-img">
+          <div class="img-item">
+            <a href="#" data-id="1">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="thumbnail img" class="thumbImg">
+            </a>
+          </div>
+          <div class="img-item">
+            <a href="#" data-id="2">
+              <img src="./images/image-product-2-thumbnail.jpg" alt="thumbnail img" class="thumbImg">
+            </a>
+          </div>
+          <div class="img-item">
+            <a href="#" data-id="3">
+              <img src="./images/image-product-3-thumbnail.jpg" alt="thumbnail img" class="thumbImg">
+            </a>
+          </div>
+          <div class="img-item">
+            <a href="#" data-id="4">
+              <img src="./images/image-product-4-thumbnail.jpg" alt="thumbnail img" class="thumbImg">
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <div class="product-details-section">
+        <p class="company-name">Sneaker Company</p>
+        <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+        <p class="product-text">These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+        <div class="price-section">
+          <div class="before-after-price">
+
+            <p class="offer-price"> $125.00</p>
+            <p class="discount-perentage">50%</p>
+          </div>
+          <p class="orignal-price">$250.00</p>
+        </div>
+        <div class="btns-section">
+          <div class="items-Quantities-btns">
+            <button class="btn minus"><img src="./images/icon-minus.svg" alt="minus icon" class="minus-img"></button>
+            <button class="btn quantity">0</button>
+            <button class="btn plus"><img src="./images/icon-plus.svg" alt="plus icon" class="plus-img"></button>
+          </div>
+          <button class="add-to-cart"> <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                fill="#ffff" fill-rule="nonzero" />
+            </svg> Add to cart</button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
